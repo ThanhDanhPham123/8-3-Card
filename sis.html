@@ -2,25 +2,36 @@
 <html>
     <head>
         <title>Gửi em nhân ngày 8/3</title>
-        <link rel="stylesheet" href="main1.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
     </head>
     <body>    
         <div class="border">
-            <p>[Thêm thư vào đây nhé mấy con gà!!!]</p>
+            <div class="open">
+                <input type="checkbox" id="opening">
+                <label for="opening" id="heart_label">
+                    <img id="heart_icon" src="heart_label.png">
+                </label>
+            </div>
+            <h1 id="call">Bấm 1 lần váo trái tim!!</h1>
         </div>
     </body>
+
     <script>
         document.getElementById("opening").addEventListener("change", function() {
             let heading = document.getElementById("call");
             if (this.checked) {
                 heading.style.opacity = "0"; // Hide smoothly
+
+                // Redirect after a delay (e.g., 2 seconds)
+                setTimeout(() => {
+                    window.location.href = "model1.html"; // Change to the desired page
+                }, 2000);
             } else {
                 heading.style.opacity = "1"; // Show again if unchecked
             }
         });
-        
-        </script>
+    </script>
 </html>
