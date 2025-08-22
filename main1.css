@@ -5,13 +5,13 @@ body{
     align-items: center;
     height: 100vh; 
     margin: 0; 
-    background: url('heart_pattern.png') repeat;
+    background: url('Flower.jpg') repeat;
     background-size: 200px 200px;
     animation: diagonalScroll 5s linear infinite;
 }
 p{
     font-family: "Meow Script", cursive;
-    font-size: 23px;
+    font-size: 18px;
     opacity: 0;
     animation-name: appear;
     animation-duration: 2s;
@@ -55,14 +55,23 @@ h1{
 .border{
     display: flex;
     flex-direction: column; 
-    justify-content: center; 
+    justify-content: flex-start; 
     align-items: center;
     width: 70vh;
     height: 70vh;
-    background-color: rgb(249, 131, 190);
-    border: 50px solid #fd5cb2;
-    overflow: scroll;
+    background-color: rgb(248, 208, 233);
+    border: 10px solid #ade0ff;      /* Reduce border thickness */
+    padding: 30px;                   /* Add padding for inner space */
+    overflow-y: auto;                /* Enable vertical scrolling */
     position: relative;
+}
+.duck{
+    display: block;
+    margin: 20px auto 0 auto; /* space above and center horizontally */
+    width: 5px; /* adjust as needed */
+    height: auto;
+    position: static; /* remove relative positioning */
+    animation: float 3s ease-in-out infinite;
 }
 @keyframes shake{
     0%{

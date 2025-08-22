@@ -5,7 +5,7 @@ body{
     align-items: center;
     height: 100vh; 
     margin: 0; 
-    background: url('heart_pattern.png') repeat;
+    background: url('Flower.jpg') repeat;
     background-size: 200px 200px;
     animation: diagonalScroll 5s linear infinite;
 }
@@ -55,8 +55,8 @@ h1{
     align-items: center;
     width: 70vh;
     height: 70vh;
-    background-color: rgb(249, 131, 190);
-    border: 50px solid #fd5cb2;
+    background-color: rgb(248, 208, 233);
+    border: 50px solid #ade0ff;
     overflow: hidden;
     position: relative;
 }
